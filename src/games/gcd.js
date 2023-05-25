@@ -4,10 +4,10 @@ import runGameLogic, { roundsNumber } from '../gameLogic.js';
 const description = 'Find the greatest common divisor of given numders.';
 
 const getGcd = (num1, num2) => {
-   if (num1 === 0) {
-     return num2;
-   }
-   return getGcd(num2 % num1, num1);
+  if (num1 === 0) {
+    return num2;
+  }
+  return getGcd(num2 % num1, num1);
 };
 
 const generateRound = () => {
